@@ -63,10 +63,13 @@ sum <- cat %>%
   summarise(sum = sum(count))
 
 group <- sum %>% summarise(sum = sum(sum))
+sum(group$sum)
 
 # Categories with examples
 
 examples <- read.csv2(file = "domain_categories-v2.csv", sep = ",", header = TRUE)
 
-sum(sum$sum)
+
+write.csv(sum, "Sum_of_visits.csv", row.names=FALSE)
+
 
