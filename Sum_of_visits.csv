@@ -1,0 +1,41 @@
+"group","categories","sum"
+"Adult","adult",488999
+"Advertising","advertising",24566
+"Consumption","alcohol/tobacco",9773
+"Consumption","business",5638627
+"Consumption","finance",477961
+"Consumption","real estate",41138
+"Consumption","shopping",2550416
+"Consumption","vehicles",61243
+"Consumption","weapons",456
+"Tech service","black list",38074
+"Tech service","content server",92443
+"Tech service","filter avoidance",564
+"Tech service","information tech",479970
+"Tech service","parked",37456
+"Media","blogs",16276
+"Media","illegal content",20044
+"Media","media sharing",41883
+"Media","news and media",299296
+"Media","streaming media",865124
+"Status","dating",14077
+"Status","job related",27069
+"Status","personals",40659
+"Status","religion",1745
+"Life","drugs",1019
+"Life","food/recipes",84792
+"Life","health",55829
+"Life","travel",167011
+"Education","education",1718396
+"Education","translators",720
+"Communication","forums",49198
+"Communication","messaging",528356
+"Communication","social media",1173147
+"Gambling","gambling",209355
+"Entertainment","games",525130
+"Entertainment","humor",6
+"Entertainment","virtual reality",263
+"General","general",1922875
+"General","search engines",3731828
+"Sports","sports",154690
+"Uncategorized","uncategorized",1430
