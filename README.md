@@ -6,6 +6,6 @@ Machine Learning Approach" which is available in a working paper form on [Overle
 
 The list of available replication materials:
 
-- R code for exploring domain categories from Webshrinker;
+- R code for exploring domain categories from Webshrinker -- a table with descriptive statistics;
 - R code with regressions based on domain categories;
 - R code with visualizations of regression outputs.
