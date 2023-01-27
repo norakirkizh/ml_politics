@@ -13,4 +13,4 @@ The list of available replication materials:
 - R code with regressions based on domain categories;
 - R code with visualizations of regression outputs.
 
-Additionally, plots for validation of web tracking data.
+Additionally, plots for validation of web tracking data: [browsing behavior](https://github.com/norakirkizh/ml_politics/blob/master/ivw_germany.pdf) and [privacy policy] of web tracking vs national German panel. 
