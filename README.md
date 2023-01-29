@@ -1,4 +1,3 @@
-# ml_politics
 ### Machine Learning Application to Study Political Attitudes
 
 In this repository I share replication materials for the article "Identifying Political Attitudes from Web Browsing Behavior:
