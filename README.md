@@ -11,7 +11,8 @@ The list of available replication materials:
 
 - [Table](https://github.com/norakirkizh/ml_politics/blob/master/domain_categories-v2.csv) with domain categories from Webshrinker that we managed to match with domains from our initial web tracking data.
 - [R code](https://github.com/norakirkizh/ml_politics/blob/master/category_stat.R) for exploring domain categories from Webshrinker: a [table](https://github.com/norakirkizh/ml_politics/blob/master/Sum_of_visits.csv) with descriptive statistics like sum of visits by group of domain categories;
-- R code with regressions based on domain categories;
+- Correlation plots; 
+- R code with regressions;
 - R code with visualizations of regression outputs.
 
 Additionally, plots for validation of web tracking data: [browsing behavior](https://github.com/norakirkizh/ml_politics/blob/master/ivw_germany.pdf) and [privacy policy](https://github.com/norakirkizh/ml_politics/blob/master/plot_privacy_noad.pdf) of web tracking vs national German panel.
