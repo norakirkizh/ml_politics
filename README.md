@@ -14,6 +14,6 @@ The list of available replication materials:
 - Distribution plots: [code](https://github.com/norakirkizh/ml_politics/blob/master/distribution_plot.r).
 - Plots with descriptive OLS estimates, with controlls: [Selected](https://github.com/norakirkizh/ml_politics/blob/master/combined.pdf) political attitudes and domain categories, [the rest](https://github.com/norakirkizh/ml_politics/blob/master/combined_appendix.pdf) of the political attitudes;
 - [Plots](https://github.com/norakirkizh/ml_politics/blob/master/combined_appendix.pdf) with OLS estimates with controlls for the rest of the political attitudes;
-- OLS, Random Forest and ElasticNet summary plot: Pearson correlations and R2 for all political attitudes.
+- OLS, Random Forest and ElasticNet summary [plot](https://github.com/norakirkizh/ml_politics/blob/master/R2_corr.pdf): Pearson correlations and R2 for all political attitudes.
 
 Additionally, plots for validation of web tracking data: [browsing behavior](https://github.com/norakirkizh/ml_politics/blob/master/ivw_germany.pdf) and [privacy policy](https://github.com/norakirkizh/ml_politics/blob/master/plot_privacy_noad.pdf) of web tracking vs national German panel.
