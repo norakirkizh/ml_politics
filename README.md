@@ -18,5 +18,3 @@ The list of available replication materials:
 - [Plot](https://htmlpreview.github.io/?https://github.com/norakirkizh/ml_politics/blob/master/varImp.html) with Variable Importance Rank of domain categories for each political attitude.
 
 Additionally, plots for validation of web tracking data: [browsing behavior](https://github.com/norakirkizh/ml_politics/blob/master/ivw_germany.pdf) and [privacy policy](https://github.com/norakirkizh/ml_politics/blob/master/plot_privacy_noad.pdf) of web tracking vs national German panel.
-
-[https://htmlpreview.github.io/?https://github.com/norakirkizh/ml_politics/blob/master/varImp.html](https://htmlpreview.github.io/?https://github.com/norakirkizh/ml_politics/blob/master/varImp.html)
