@@ -1,4 +1,4 @@
-## Machine Learning Application to Study Political Attitudes
+## Machine Learning Application to Predict Political Attitudes from Web Browsing Histories
 
 In this repository I share replication materials for the article "Identifying Political Attitudes from Web Browsing Histories:
 Machine Learning Approach".
