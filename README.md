@@ -18,3 +18,5 @@ The list of available replication materials:
 - [Plot](https://github.com/norakirkizh/ml_politics/blob/master/varImp_alpha.pdf) with Variable Importance Rank of domain categories for each political attitude ([R code](https://github.com/norakirkizh/ml_politics/blob/master/varImp.r) that can also produce an interactive plot with plotly).
 
 Additionally, plots for validation of web tracking data: [browsing behavior](https://github.com/norakirkizh/ml_politics/blob/master/ivw_germany.pdf) and [privacy policy](https://github.com/norakirkizh/ml_politics/blob/master/plot_privacy_noad.pdf) of web tracking vs national German panel.
+
+This project has also an anonymous [repository](https://osf.io/us4dz/?view_only=65edf1069f7341a88380f40b1ec2c43d) on OSF.
