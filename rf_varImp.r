@@ -60,8 +60,7 @@ model_demsat <- train(satisfactdemocW0~., data=attitude_demsat, method="rf", pre
 
 # names(getModelInfo())
 importance_demsat <- varImp(model_demsat, scale=FALSE)
-# print(importance)
-# plot(importance)
+plot(importance_demsat)
 
 demsat_imp <- varImp(model_demsat)$importance
 demsat_imp <- demsat_imp %>% rownames_to_column(var = "Feature")
@@ -126,7 +125,7 @@ model_orderdem <- train(order_democrW2~., data=attitude_orderdem, method="rf", p
 importance_orderdem <- varImp(model_orderdem, scale=FALSE)
 
 # plot
-pdf(file = "/Users/eleonorakirkiza/Documents/JITP/Analysis/plot_varImp_dem.pdf", plot_dem, width=5, height=7)
+pdf(file = "/Users/eleonorakirkiza/Documents/JITP/Analysis/plot_varImp_dem.pdf", model_orderdem, width=5, height=7)
 plot(importance_orderdem)
 dev.off()
 
@@ -278,7 +277,7 @@ importance_job <- varImp(model_job, scale=FALSE)
 
 job_imp <- varImp(model_job)$importance
 job_imp <- job_imp %>% rownames_to_column(var = "Feature")
-colnames(job_imp)[1] <- "Immigration: Jobs"
+colnames(job_imp)[1] <- "Immigration: jobs"
 job_imp <- job_imp %>% arrange(desc(Overall))
 
 ############### immprobs_crimeW0: 1 - disagree, 5 - agree ###############
@@ -451,7 +450,7 @@ model_pol <- train(polinterestW0~., data=attitude_pol, method="rf", preProcess="
 importance_pol <- varImp(model_pol, scale=FALSE)
 
 # plot
-pdf(file = "/Users/eleonorakirkiza/Documents/JITP/Analysis/plot_varImp_pol.pdf", plot_dem, width=5, height=7)
+pdf(file = "/Users/eleonorakirkiza/Documents/JITP/Analysis/plot_varImp_polint.pdf", importance_pol, width=5, height=7)
 plot(importance_pol)
 dev.off()
 
@@ -459,6 +458,7 @@ pol_imp <- varImp(model_pol)$importance
 pol_imp <- pol_imp %>% rownames_to_column(var = "Feature")
 colnames(pol_imp)[1] <- "Interest in politics"
 pol_imp <- pol_imp %>% arrange(desc(Overall))
+
 
 ################ trustinst_policeW0: 1 - yes, 5 - not at all #######
 
@@ -560,7 +560,7 @@ data_long$Category <- fct_collapse(data_long$Feature,
 data_long$Dimention <- fct_collapse(data_long$Attitude,
                        Issues = c("Interest in politics", "Support EU integration", "Climate change", "Trust: national parliament", "Trust: police"),
                        Democracy = c("Democracy: satisfaction", "Democracy: support free elections", "Democracy: obeying rulers", "Democracy: support democratic system"),
-                       Immigration = c("Immigration: Islam", "Immigration: crime", "Immigration: Jobs"),
+                       Immigration = c("Immigration: Islam", "Immigration: crime", "Immigration: jobs"),
                        Populism = c("Populism: exploitation by big business", "Populism: income redistribution", "Populism: socbenefits make paople lazy"))
 
 data_long$Attitude <- factor(data_long$Attitude)
@@ -569,7 +569,7 @@ data_long$Group <- factor(data_long$Category)
 
 data_long$Rank <- rep(seq(1,30,by=1), each=1, times=nrow(data_long)/30)
 
-######################
+###################### Plotting ###################### 
 
 rf_varImp <- ggplot(data_long, aes(x = Rank, y = Attitude, fill = Category, alpha = -Rank)) +
   geom_tile() + theme_minimal() + coord_cartesian(xlim=c(1, 30)) +
@@ -590,7 +590,7 @@ rf_varImp <- ggplot(data_long, aes(x = Rank, y = Attitude, fill = Category, alph
 
 ggsave("rf_varImp.pdf", rf_varImp, width=3, height=2, units="in", scale=3)
 
-######################
+###################### Interactive plot ###################### 
 
 p <- ggplot(data_long, aes(x = Rank, y = Attitude, fill = Category, 
                            text = paste("Websites:", Feature))) +
@@ -623,6 +623,5 @@ p <- ggplotly(p, tooltip="text", height = 700, width=1000) %>%
 
 htmlwidgets::saveWidget(as_widget(p), "rf_varImp.html")
 
-# plotly_build(p)
 
 # https://compstat-lmu.shinyapps.io/Personality_Prediction/#section-rfimp
