@@ -82,9 +82,12 @@ domain_1min %>% select(category_names) %>% summarise_all(funs(sum(is.na(.)))) # 
 
 domain_1min <- domain_1min %>% filter(n >= 10)
 
-top3 <- domain_1min %>% group_by(category_names) %>% top_n(3, n)
+top5 <- domain_1min %>% group_by(category_names) %>% top_n(5, n)
 
+top5 <- top5 %>% rename(Category = category_names, Website = domain, Visits = n) %>% 
+  arrange(Category)
 
+write.csv(top5, "./top5_domains_per_category.csv", row.names=FALSE)
 
 
 
