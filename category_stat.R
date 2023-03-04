@@ -65,11 +65,30 @@ sum <- cat %>%
 group <- sum %>% summarise(sum = sum(sum))
 sum(group$sum)
 
-# Categories with examples
+write.csv(sum, "Sum_of_visits.csv", row.names=FALSE)
 
+# Examples of actual websites with categories from Webshrinker
+
+load(file="./cs-transfer/2019-06-16_all.rda")
 examples <- read.csv2(file = "domain_categories-v2.csv", sep = ",", header = TRUE)
 
+domain_1min <- urls_final %>% filter(duration >= 60) %>% select(domain)
 
-write.csv(sum, "Sum_of_visits.csv", row.names=FALSE)
+domain_1min <- domain_1min %>% count(domain, sort = TRUE)
+
+domain_1min <- left_join(domain_1min, examples, by = "domain")
+
+domain_1min %>% select(category_names) %>% summarise_all(funs(sum(is.na(.)))) # n of NAs
+
+domain_1min <- domain_1min %>% filter(n >= 10)
+
+top3 <- domain_1min %>% group_by(category_names) %>% top_n(3, n)
+
+
+
+
+
+
+
 
 
