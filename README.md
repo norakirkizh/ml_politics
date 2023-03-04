@@ -12,6 +12,8 @@ The list of available replication materials:
 - [Table](https://github.com/norakirkizh/ml_politics/blob/master/domain_categories-v2.csv) with domain categories from Webshrinker that we managed to match with domains from our initial web tracking data.
 - [R code](https://github.com/norakirkizh/ml_politics/blob/master/category_stat.R) for exploring domain categories from Webshrinker: A [table](https://github.com/norakirkizh/ml_politics/blob/master/Sum_of_visits.csv) with descriptive statistics like sum of visits by group of domain categories;
 - Distribution plots: [code](https://github.com/norakirkizh/ml_politics/blob/master/distribution_plot.r).
+- [Table]() with top 5 domains per category.
+
 - Plots with descriptive OLS estimates, with controlls: [Selected](https://github.com/norakirkizh/ml_politics/blob/master/combined.pdf) political attitudes and domain categories, [the rest](https://github.com/norakirkizh/ml_politics/blob/master/combined_appendix.pdf) of the political attitudes;
 - [Plots](https://github.com/norakirkizh/ml_politics/blob/master/combined_appendix.pdf) with OLS estimates with controlls for the rest of the political attitudes;
 - OLS, Random Forest and ElasticNet summary [plot](https://github.com/norakirkizh/ml_politics/blob/master/R2_corr.pdf): Pearson correlations and R2 for all political attitudes ([R code](https://github.com/norakirkizh/ml_politics/blob/master/R2_plot.r));
