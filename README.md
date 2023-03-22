@@ -19,3 +19,5 @@ Below is the of available replication materials and supplementary files for repl
 - Two models showed significant predictions: support for democratic political system and interest in politics. Ploted variable importance rank for both models: [Plot 1](https://github.com/norakirkizh/ml_politics/blob/master/plot_varImp_dem.pdf) and [Plot 2](https://github.com/norakirkizh/ml_politics/blob/master/plot_varImp_polint.pdf) respectively.
 
 Additionally, plots for validation of web tracking data: [browsing behavior](https://github.com/norakirkizh/ml_politics/blob/master/ivw_germany.pdf) and [privacy policy](https://github.com/norakirkizh/ml_politics/blob/master/plot_privacy_noad.pdf) of web tracking vs national German panel.
+
+This project also has repository on OSF.
