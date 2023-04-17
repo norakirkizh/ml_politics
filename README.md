@@ -18,6 +18,10 @@ Below is the of available replication materials and supplementary files for repl
 - Plots with Variable Importance Rank of domain categories for each political attitude ([R code](https://github.com/norakirkizh/ml_politics/blob/master/rf_varImp.r) that can also produce an interactive plot with plotly): [Variable importance from Random Forest](https://github.com/norakirkizh/ml_politics/blob/master/rf_varImp.pdf), and [Linear regression](https://github.com/norakirkizh/ml_politics/blob/master/varImp_alpha.pdf).
 - Two models showed significant predictions: support for democratic political system and interest in politics. Ploted variable importance rank for both models: [Plot 1](https://github.com/norakirkizh/ml_politics/blob/master/plot_varImp_dem.pdf) and [Plot 2](https://github.com/norakirkizh/ml_politics/blob/master/plot_varImp_polint.pdf) respectively.
 
+#### Summary
+
+We combined survey and web tracking data to build a model where web site visits predict self-reported political attitues. 
+
 Additionally, plots for validation of web tracking data: [browsing behavior](https://github.com/norakirkizh/ml_politics/blob/master/ivw_germany.pdf) and [privacy policy](https://github.com/norakirkizh/ml_politics/blob/master/plot_privacy_noad.pdf) of web tracking vs national German panel.
 
 This project also has repository on OSF.
