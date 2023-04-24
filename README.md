@@ -20,7 +20,7 @@ Below is the of available replication materials and supplementary files for repl
 
 #### Summary
 
-We combined survey and web tracking data to build a model where web site visits predict self-reported political attitues. There are several findings about predicting models and their application in social science. The evidence is mixed and requires further research. We built 15 machine learning models for 15 political attitudes.
+We combined survey and web tracking data to build a model where web site visits predict self-reported political attitues. There are several findings about predicting models and their applications in social science. The evidence is mixed and requires further research. We built machine learning model for each political attitude of interest, 15 in total.
 
 Additionally, plots for validation of web tracking data: [browsing behavior](https://github.com/norakirkizh/ml_politics/blob/master/ivw_germany.pdf) and [privacy policy](https://github.com/norakirkizh/ml_politics/blob/master/plot_privacy_noad.pdf) of web tracking vs national German panel.
 
